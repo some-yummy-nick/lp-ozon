@@ -100,3 +100,11 @@
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 }
+
+.desktop {
+	display: none;
+
+	@include min-screen($desktop) {
+		display: initial;
+	}
+}

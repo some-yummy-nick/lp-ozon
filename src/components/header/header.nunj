@@ -1,5 +1,45 @@
 <div class="header">
 	<div class="container">
-		{{ menu() }}
+		<div class="header__wrapper">
+			<picture>
+				<source srcset="/assets/images/logo.svg" media="(min-width: 768px)"/>
+				<img src="/assets/images/logo-mobile.svg" alt="" class="header__logo"/>
+			</picture>
+			<div class="header__order">
+				<img src="/assets/images/ozon-logo.png" alt="" class="header__order-logo">
+				<span class="header__order-text"><span class="desktop">Ozon</span> (№28451)</span>
+			</div>
+			<div class="header__bill">
+				<svg width="16" height="16" class="header__coin">
+					<use xlink:href="#icon-coin"></use>
+				</svg>
+				<span class="header__sum">9 932.00 <span class="rouble">₽</span></span>
+				<div class="header__expire">(Хватит ~ 345 дней)</div>
+				<button class="header__add" type="button">Пополнить</button>
+			</div>
+			<div class="header__count">
+				<svg width="14" height="16" class="header__bell">
+					<use xlink:href="#icon-bell"></use>
+				</svg>
+				<span class="header__count-number">11</span>
+			</div>
+			<div class="header__account" id="js-account">
+				<div class="header__user">
+					<img src="/assets/images/user.png" width="44" height="44" alt="">
+				</div>
+				{{ dropdown({
+				trigger: 'Александр',
+				items: items
+				}) }}
+			</div>
+			<button class="header__hamburger" type="button" id="js-hamburger">
+				<svg width="26" height="24" class="header__hamburger-open">
+					<use xlink:href="#icon-menu"></use>
+				</svg>
+				<svg width="19" height="18" class="header__hamburger-close">
+					<use xlink:href="#icon-close"></use>
+				</svg>
+			</button>
+		</div>
 	</div>
 </div>

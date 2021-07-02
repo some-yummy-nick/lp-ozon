@@ -1,0 +1,44 @@
+.dropdown {
+	position: relative;
+
+	&.active {
+		.dropdown {
+			&__list {
+				opacity: 1;
+			}
+
+			&__down {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&__btn {
+		padding: 0;
+		background-color: transparent;
+		border: 1px solid transparent;
+	}
+
+	&__list {
+		position: absolute;
+		right: 0;
+		z-index: 2;
+		border: 1px solid #d8dce9;
+		border-radius: $default-border-radius;
+		background-color: #fff;
+		opacity: 0;
+		transition: opacity $default-transition-duration;
+	}
+
+	&__link {
+		display: inline-block;
+		white-space: nowrap;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+
+	&__down {
+		transition: transform $default-transition-duration;
+		fill: $blue;
+	}
+}

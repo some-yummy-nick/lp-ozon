@@ -1,4 +1,304 @@
 .header {
-	padding: 20px 0;
-	background: #ccc;
+	position: relative;
+	margin-bottom: 30px;
+	padding: 18px 0;
+	box-shadow: 0 5px 10px rgba(186, 192, 209, 0.2);
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-right: 20px;
+		margin-left: 0;
+	}
+
+	&__order {
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+		padding: 5px 5.5px;
+		border: 1px solid #d8dce9;
+		border-radius: $default-border-radius;
+		font-size: 12px;
+		color: #333333;
+
+		&-logo {
+			margin-right: 8px;
+		}
+	}
+
+	&__bill {
+		display: flex;
+		align-items: center;
+	}
+
+	&__coin {
+		margin-right: 8px;
+		fill: $pink;
+	}
+
+	&__sum {
+		margin-right: 8px;
+		font-size: 12px;
+	}
+
+	&__expire {
+		display: none;
+	}
+
+	&__add {
+		display: none;
+	}
+
+	&__count,
+	&__user {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		background-color: #f4f5f8;
+		border-radius: 50%;
+	}
+
+	&__count {
+		display: none;
+	}
+
+	&__bell {
+		fill: none;
+	}
+
+	&__user {
+		width: 44px;
+		height: 44px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin-right: 16px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__account {
+		display: none;
+
+		&.active {
+			top: 80px;
+		}
+	}
+
+	&__hamburger {
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		min-width: 29px;
+		min-height: 22px;
+		background-color: transparent;
+		border: 1px solid transparent;
+
+		&:hover {
+			fill: #000;
+		}
+
+		&.active {
+			.header__hamburger-close {
+				transform: translateX(-50%) translateY(-50%) scale(1);
+			}
+
+			.header__hamburger-open {
+				transform: translateX(-50%) translateY(-50%) scale(0);
+			}
+		}
+
+		&-close,
+		&-open {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			transition: fill $default-transition-duration, stroke $default-transition-duration,
+			transform $default-transition-duration;
+		}
+
+		&-close {
+			transform: scale(0);
+		}
+	}
+
+	@include max-screen($tablet) {
+		&__account {
+			&.active {
+				display: flex;
+				justify-content: center;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				padding-bottom: 10px;
+				background-color: #fff;
+				border-bottom: 1px solid #d8dce9;
+				z-index: 2;
+
+				.dropdown {
+					padding-top: 45px;
+					text-align: center;
+
+					&__btn {
+						white-space: nowrap;
+					}
+
+					&__down {
+						display: none;
+					}
+
+					&__list {
+						position: static;
+						opacity: 1;
+						border: none;
+					}
+				}
+
+				.header{
+					&__user{
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	@include ipad {
+		&__order {
+			padding: 9px 17.5px;
+		}
+
+		&__bill {
+			padding: 3.5px 17.5px;
+		}
+	}
+
+	@include min-screen($tablet) {
+		&__account {
+			&.active {
+				top: 90px;
+			}
+		}
+
+		&__wrapper {
+			justify-content: initial;
+		}
+
+		&__logo {
+			position: static;
+			margin-right: 35px;
+			transform: translateY(0);
+		}
+
+		&__order {
+			margin-right: auto;
+			font-size: 13px;
+		}
+
+		&__expire {
+			display: block;
+			margin-right: 16px;
+			font-size: 12px;
+		}
+
+		&__bill {
+			margin-right: 20px;
+			border: 1px solid #d8dce9;
+			border-radius: $default-border-radius;
+		}
+
+		&__add {
+			display: block;
+			padding: 6px 11.5px 5px;
+			background-color: $blue;
+			color: #fff;
+			font-size: 13px;
+			border: 1px solid transparent;
+			border-radius: $default-border-radius;
+
+			&:hover {
+				border-color: $blue;
+				background-color: transparent;
+				color: $blue;
+			}
+		}
+
+		&__sum {
+			font-size: 14px;
+		}
+
+		&__hamburger {
+			position: static;
+			transform: translateY(0);
+		}
+	}
+
+	@include min-screen($desktop) {
+		&__logo {
+			display: none;
+		}
+
+		&__bill {
+			margin-right: 40px;
+			padding: 5.5px 17.5px;
+		}
+
+		&__hamburger {
+			display: none;
+		}
+
+		&__account {
+			display: flex;
+			align-items: center;
+		}
+
+		&__count {
+			display: flex;
+			position: relative;
+			margin-right: 40px;
+
+			&-number {
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 16px;
+				height: 16px;
+				padding-top: 3px;
+				padding-right: 1px;
+				line-height: 1;
+				background-color: $pink;
+				color: #fff;
+				border-radius: 50%;
+				font-size: 8px;
+			}
+		}
+
+		&__expire {
+			font-size: 14px;
+		}
+
+		&__order {
+			width: 250px;
+			padding: 11px 52px;
+		}
+	}
 }

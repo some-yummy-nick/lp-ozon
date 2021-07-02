@@ -1,0 +1,15 @@
+{% macro dropdown(props) %}
+<div class="dropdown{% if props.className %} {{ props.className }}{% endif %} js-dropdown">
+	<button class="dropdown__btn js-dropdown-btn" type="button">
+		<span>{{ props.trigger }}</span>
+		<svg width="12" height="12" class="dropdown__down">
+			<use xlink:href="#icon-down"></use>
+		</svg>
+	</button>
+	<ul class="dropdown__list js-dropdown-list">
+		{% for item in items %}
+		<li class="dropdown__item"><a href="{{item.link}}" class="dropdown__link">{{item.title}}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endmacro %}

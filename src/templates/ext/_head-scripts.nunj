@@ -1,4 +1,20 @@
 {% macro headScripts() %}
+<script type="text/javascript">
+	if ('fonts' in document) {
+		var Lato = new FontFace('Lato', 'url(/../assets/fonts/Lato/Lato-Regular.woff2) format(\'woff2\'), url(/../assets/fonts/Lato/Lato-Regular.woff) format(\'woff\')')
+		var LatoSemibold = new FontFace('Lato-Semibold', 'url(/../assets/fonts/Lato/Lato-Semibold.woff2) format(\'woff2\'), url(/../assets/fonts/Lato/Lato-Semibold.woff) format(\'woff\')')
+		Promise.all([Lato.load(), LatoSemibold.load()]).then(function(fonts) {
+			fonts.forEach(function(font) {
+				document.fonts.add(font)
+			})
+		})
+	}
+	if (!('fonts' in document) && 'head' in document) {
+		var style = document.createElement('style')
+		style.innerHTML = '@font-face { font-family: Lato; src: url(/assets/fonts/Lato/Lato-Regular.woff2) format(\'woff2\'), url(/assets/fonts/Lato/Lato-Regular.woff) format(\'woff\');} @font-face { font-family: Lato-Semibold; src: url(/assets/fonts/Lato/Lato-Semibold.woff2) format(\'woff2\'), url(/assets/fonts/Lato/Lato-Semibold.woff) format(\'woff\');} @font-face { font-family: Lato; src: url(/assets/fonts/Lato/Lato-Regular.woff2) format(\'woff2\'), url(/assets/fonts/Lato/Lato-Regular.woff) format(\'woff\');}'
+		document.head.appendChild(style)
+	}
+</script>
 	<script type="text/javascript">
 		;(function(){
 			var modificators = [],
@@ -63,7 +79,7 @@
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'assets/svg/sprite.svg', true);
 			xhr.overrideMimeType('image/svg+xml');
-			
+
 			xhr.onreadystatechange = function(){
 				if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
 					function waitForBody(){
@@ -81,7 +97,7 @@
 						}
 					}
 
-					waitForBody();	
+					waitForBody();
 				};
 			}
 

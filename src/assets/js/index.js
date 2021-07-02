@@ -1,10 +1,12 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-
 // import jquery from 'jquery';
 // global.jquery = jquery;
 
 import { gsap } from 'gsap';
+
+import hamburger from 'modules/hamburger';
+import dropdown from './modules/dropdown';
 
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
 // gsap.registerPlugin(ScrollToPlugin);
@@ -27,6 +29,8 @@ class ProjectApp {
 		this.modules = {};
 		document.addEventListener('DOMContentLoaded', () => {
 			document.documentElement.classList.remove('_loading');
+			dropdown();
+			hamburger();
 		});
 	}
 }

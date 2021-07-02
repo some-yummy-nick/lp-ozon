@@ -13,14 +13,14 @@
 			"path": "#"
 		}
 	],
-	"someData": [
+	"items": [
 		{
-			"title": "Item 1",
-			"text": "Desc 1"
+			"title": "Личный кабинет",
+			"link": "#"
 		},
 		{
-			"title": "Item 2",
-			"text": "Desc 2"
+			"title": "История заказов",
+			"link": "#"
 		}
 	]
 }
