@@ -1,17 +1,30 @@
 {
 	"menuItems": [
 		{
-			"name": "Menu Item 1",
-			"path": "#"
+			"name": "Настройки",
+			"id": "settings",
+		  	"selected": "false"
 		},
 		{
-			"name": "Menu Item 2",
-			"path": "#"
+			"name": "Оплата",
+			"id": "bill",
+		    "selected": "true"
 		},
 		{
-			"name": "Menu Item 3",
-			"path": "#"
-		}
+			"name": "Уведомления",
+			"id": "notice",
+		    "selected": "false"
+		},
+		{
+			  "name": "Партнёрская программа",
+			  "id": "partner",
+			  "selected": "false"
+		  },
+		{
+			  "name": "Обучение",
+			  "id": "education",
+			  "selected": "false"
+		  }
 	],
 	"items": [
 		{

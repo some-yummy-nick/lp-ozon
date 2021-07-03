@@ -1,0 +1,142 @@
+.tabs {
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__top {
+		text-align: center;
+		padding: 16px 10px;
+		color: #fff;
+		border-radius: 8px 8px 0 0;
+		font-size: 14px;
+
+		&_analytics {
+			background: linear-gradient(88.34deg, #dd50da 0%, #ff94fd 100%);
+		}
+
+		&_analysis {
+			background: linear-gradient(88.34deg, #eb5757 0%, #ff8d8d 100%);
+		}
+
+		&_items {
+			background: linear-gradient(88.34deg, #6065a7 0%, #8b91dd 100%);
+		}
+	}
+
+	&__desc {
+		flex-grow: 1;
+		background-color: #f8f8f8;
+		padding: 24px;
+		font-size: 12px;
+		border-radius: 0 0 8px 8px;
+	}
+
+	&__info {
+		margin-bottom: 32px;
+	}
+
+	.table {
+		margin-bottom: 0;
+		border-bottom: 1px solid #ebebeb;
+
+		td.tabs__cell {
+			padding: 14px 0;
+		}
+
+		th.tabs__th {
+			padding: 14px 0;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #666666;
+			border-bottom: none;
+		}
+	}
+
+	.nav {
+		display: block;
+		margin-bottom: 20px;
+		overflow-x: scroll;
+		white-space: nowrap;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	.nav-item {
+		display: inline-block;
+		white-space: nowrap;
+		font-size: 0;
+		padding: 0 2.5px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		@include min-screen($tablet) {
+			padding: 0 8px;
+		}
+
+		@include min-screen($desktop) {
+			padding: 0 20px;
+		}
+	}
+
+	.nav-tabs .nav-link {
+		color: $blue;
+		font-size: 12px;
+		border-radius: 0;
+
+		@include min-screen($tablet) {
+			font-size: 14px;
+		}
+	}
+
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active {
+		border-bottom: 3px solid $pink;
+		color: $pink;
+		font-family: 'Lato-Semibold';
+	}
+
+	.nav-tabs .nav-link:focus,
+	.nav-tabs .nav-link:hover {
+		&:not(.active) {
+			border-color: transparent;
+			opacity: 0.8;
+		}
+	}
+
+	@include max-screen($tablet) {
+		padding: 20px 15px;
+	}
+
+	@include ipad {
+		&__top {
+			font-size: 16px;
+		}
+	}
+
+	@include min-screen($desktop) {
+		&__top {
+			font-size: 18px;
+		}
+
+		&__desc {
+			font-size: 14px;
+		}
+	}
+}

@@ -3,6 +3,7 @@
 	margin-bottom: 30px;
 	padding: 18px 0;
 	box-shadow: 0 5px 10px rgba(186, 192, 209, 0.2);
+	background-color: #fff;
 
 	&__wrapper {
 		display: flex;
@@ -92,7 +93,7 @@
 		display: none;
 
 		&.active {
-			top: 80px;
+			top: 70px;
 		}
 	}
 
@@ -136,7 +137,7 @@
 		}
 	}
 
-	@include max-screen($tablet) {
+	@include max-screen($tablet-landscape) {
 		&__account {
 			&.active {
 				display: flex;
@@ -144,6 +145,7 @@
 				position: absolute;
 				width: 100%;
 				left: 0;
+				padding-top: 10px;
 				padding-bottom: 10px;
 				background-color: #fff;
 				border-bottom: 1px solid #d8dce9;
@@ -168,8 +170,8 @@
 					}
 				}
 
-				.header{
-					&__user{
+				.header {
+					&__user {
 						position: absolute;
 						left: 50%;
 						transform: translateX(-50%);
@@ -179,20 +181,10 @@
 		}
 	}
 
-	@include ipad {
-		&__order {
-			padding: 9px 17.5px;
-		}
-
-		&__bill {
-			padding: 3.5px 17.5px;
-		}
-	}
-
 	@include min-screen($tablet) {
 		&__account {
 			&.active {
-				top: 90px;
+				top: 78px;
 			}
 		}
 
@@ -208,6 +200,7 @@
 
 		&__order {
 			margin-right: auto;
+			padding: 9px 17.5px;
 			font-size: 13px;
 		}
 
@@ -219,6 +212,7 @@
 
 		&__bill {
 			margin-right: 20px;
+			padding: 3.5px 17.5px;
 			border: 1px solid #d8dce9;
 			border-radius: $default-border-radius;
 		}
@@ -249,7 +243,7 @@
 		}
 	}
 
-	@include min-screen($desktop) {
+	@include min-screen($tablet-landscape + 1) {
 		&__logo {
 			display: none;
 		}

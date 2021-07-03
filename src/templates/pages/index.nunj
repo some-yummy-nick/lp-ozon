@@ -1,11 +1,17 @@
 {% extends "../ext/base.nunj" %}
 
 {% from "../../components/dropdown/dropdown.nunj" import dropdown %}
+{% from "../../components/select/select.nunj" import select %}
 
 { {% block title %}Личный кабинет / {{ super() }}{% endblock title %}}
 
 {% block content %}
 
-	{% include '../../components/header/header.nunj' %}
+{% include '../../components/header/header.nunj' %}
+
+<div class="container">
+	<h1 class="title"><span class="bold">Личный кабинет</span></h1>
+	{% include '../../components/links/links.nunj' %}
+</div>
 
 {% endblock content %}

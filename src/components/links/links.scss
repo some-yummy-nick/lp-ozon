@@ -1,0 +1,47 @@
+.links {
+	.nav_links {
+		display: none;
+	}
+
+	&__select {
+		margin-bottom: 20px;
+	}
+
+	@include min-screen($tablet) {
+		.nav {
+			&_links {
+				display: flex;
+				margin-left: -16px;
+				border-bottom: none;
+				margin-bottom: 20px;
+
+				.nav-item {
+					margin-left: 16px;
+				}
+
+				.nav-link {
+					padding: 9px 15px 8px;
+					color: $blue;
+					border: 1px solid $blue;
+					border-radius: $default-border-radius;
+
+					&:hover {
+						background-color: $blue;
+						color: #fff;
+					}
+				}
+
+				.nav-item.show .nav-link,
+				.nav-link.active {
+					color: #fff;
+					background-color: $blue;
+					border: 1px solid $blue;
+				}
+			}
+		}
+
+		&__select {
+			display: none;
+		}
+	}
+}

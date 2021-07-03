@@ -108,3 +108,51 @@
 		display: initial;
 	}
 }
+
+.title {
+	margin-bottom: 20px;
+	font-size: 20px;
+
+	@include min-screen($desktop) {
+		font-size: 30px;
+	}
+}
+
+.heading {
+	margin-bottom: 10px;
+	font-family: 'Lato-Semibold';
+	font-weight: initial;
+	font-size: 16px;
+
+	@include ipad {
+		font-size: 18px;
+	}
+
+	@include min-screen($tablet) {
+		margin-bottom: 15px;
+	}
+
+	@include min-screen($desktop) {
+		font-size: 24px;
+	}
+}
+
+.pink {
+	color: $pink;
+}
+
+.bold {
+	font-family: 'Lato-Semibold';
+	font-weight: initial;
+}
+
+.nav-tabs .nav-link {
+	padding: 0;
+	background-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	background-color: transparent;
+	border: none;
+}

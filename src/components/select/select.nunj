@@ -1,0 +1,9 @@
+{% macro select(props) %}
+<div class="select{% if props.className %} {{ props.className }}{% endif %}">
+	<select class="form-select select__native">
+		{% for item in props.items %}
+		<option value="{{item.name}}" {% if item.selected==='true' %} selected{% endif %}>{{item.name}}</option>
+		{% endfor %}
+	</select>
+</div>
+{% endmacro %}

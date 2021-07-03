@@ -3,11 +3,15 @@
 }
 
 .container {
-	max-width: 1920px;
-	padding: 0 15px;
-	margin: auto;
+	@include min-screen($large) {
+		max-width: 1900px;
+	}
+}
 
-	@include min-screen($desktop) {
-		padding: 0 40px;
+@include ipad {
+	.container,
+	.container-md,
+	.container-sm {
+		max-width: 768px;
 	}
 }

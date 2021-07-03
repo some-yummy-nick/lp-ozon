@@ -1,0 +1,27 @@
+<div class="links">
+	{{ select({
+	className: 'links__select',
+	items: menuItems
+	}) }}
+	<ul class="nav nav-tabs nav_links" id="myLinks" role="tablist">
+		{% for item in menuItems %}
+		<li class="nav-item" role="presentation">
+			<button class="nav-link{% if item.selected==='true' %} active{% endif %}" id="{{item.id}}-tab"
+					data-bs-toggle="pill" data-bs-target="#{{item.id}}"
+					type="button"
+					role="tab" aria-controls="{{item.id}}" aria-selected="{{item.selected}}">{{item.name}}
+			</button>
+		</li>
+		{% endfor %}
+	</ul>
+	<div class="tab-content" id="myLinksContent">
+		<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Настройки</div>
+		<div class="tab-pane fade show active" id="bill" role="tabpanel" aria-labelledby="bill-tab">
+			{% include '../../components/tabs/tabs.nunj' %}
+		</div>
+		<div class="tab-pane fade" id="notice" role="tabpanel" aria-labelledby="notice-tab">Уведомления</div>
+		<div class="tab-pane fade" id="partner" role="tabpanel" aria-labelledby="partner-tab">Партнёрская программа
+		</div>
+		<div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">Обучение</div>
+	</div>
+</div>

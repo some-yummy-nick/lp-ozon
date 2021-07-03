@@ -1,0 +1,206 @@
+<div class="tabs">
+	<h2 class="heading">Оплата</h2>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#add" type="button"
+					role="tab" aria-controls="add" aria-selected="false">Пополнение баланса
+			</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button"
+					role="tab" aria-controls="details" aria-selected="false">Детализация расходов
+			</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link active" id="services-tab" data-bs-toggle="tab" data-bs-target="#services"
+					type="button"
+					role="tab" aria-controls="services" aria-selected="true">Тарифы, доп. услуги
+
+			</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button"
+					role="tab" aria-controls="history" aria-selected="false">История платежей
+			</button>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">Пополнение баланса текст</div>
+		<div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">Детализация расходов</div>
+		<div class="tab-pane fade show active" id="services" role="tabpanel" aria-labelledby="services-tab">
+			<div class="row">
+				<div class="col col-md-6 col-lg-4 mb-md-3 mb-3 mb-lg-0">
+					<div class="tabs__item">
+						<div class="tabs__top tabs__top_analytics">
+							<span class="bold">Wildberries — Аналитика</span>
+						</div>
+						<div class="tabs__desc">
+							<div class="tabs__info">
+								<p>Анализ заказов, продаж, остатков, товарная аналитика по каждому
+									складу маркетплейса.</p>
+							</div>
+							<table class="table tabs__table">
+								<thead>
+								<tr>
+									<th class="tabs__th" scope="col">Количество товаров</th>
+									<th class="tabs__th" scope="col">Месяц</th>
+									<th class="tabs__th" scope="col">День</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tabs__cell">до 50</td>
+									<td class="tabs__cell">2370₽</td>
+									<td class="tabs__cell">79₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 51 до 100</td>
+									<td class="tabs__cell">2 970₽</td>
+									<td class="tabs__cell">99₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 101 до 500</td>
+									<td class="tabs__cell">4 470₽</td>
+									<td class="tabs__cell">149₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 501 до 1000</td>
+									<td class="tabs__cell">7 470₽</td>
+									<td class="tabs__cell">249₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 1001 до 5000</td>
+									<td class="tabs__cell">10 470₽</td>
+									<td class="tabs__cell">349₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">Безлимитный от 5001</td>
+									<td class="tabs__cell">14 970₽</td>
+									<td class="tabs__cell">499₽</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-6 col-lg-4 mb-md-3 mb-3 mb-lg-0">
+					<div class="tabs__item">
+						<div class="tabs__top tabs__top_analysis">
+							<span class="bold">Wildberries — Анализ категорий</span>
+						</div>
+						<div class="tabs__desc">
+							<div class="tabs__info">
+								<p>Анализ любых категорий, страниц брендов, поисковых запросов, акций.
+									Безлимитный доступ к данным по всем товарам со страницы, заказам, остатках на
+									складах,
+									скорости заказов и другим метрикам.</p>
+								<p>
+									<span class="pink">Добавление страницы в отслеживание — 99₽/страница</span>
+								</p>
+								<p>
+									Списывается за уникальную страницу, если вдруг удалили страницу и добавили заново —
+									повторно оплата не снимается
+								</p>
+								<p><span class="bold">Ежедневный мониторинг и обновление страниц:</span></p>
+							</div>
+							<table class="table tabs__table">
+								<thead>
+								<tr>
+									<th class="tabs__th" scope="col">Количество страниц</th>
+									<th class="tabs__th" scope="col">Месяц</th>
+									<th class="tabs__th" scope="col">День</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tabs__cell">до 3</td>
+									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 4 до 10</td>
+									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 11 до 50</td>
+									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">Безлимитный от 51</td>
+									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0₽</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-4 mb-xs-3">
+					<div class="tabs__item">
+						<div class="tabs__top tabs__top_items">
+							<span class="bold">Wildberries — Позиции товаров</span>
+						</div>
+						<div class="tabs__desc">
+							<div class="tabs__info">
+								<p>Анализ позиций любых товаров на страницах категорий, бренда,
+									поисковых запросов, акций.</p>
+								<p>
+									<span class="pink">Добавление нового товара — 29₽/страница</span>
+								</p>
+								<p>Списывается за уникальный товар, если вдруг удалили товар и добавили заново -
+									повторно оплата не списывается.</p>
+								<p><span class="bold">Ежедневный мониторинг позиций:</span></p>
+							</div>
+							<table class="table tabs__table">
+								<thead>
+								<tr>
+									<th class="tabs__th" scope="col">Количество товаров</th>
+									<th class="tabs__th" scope="col">Месяц</th>
+									<th class="tabs__th" scope="col">День</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="tabs__cell">до 20</td>
+									<td class="tabs__cell">870₽</td>
+									<td class="tabs__cell">29₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 21 до 100</td>
+									<td class="tabs__cell">1 470₽</td>
+									<td class="tabs__cell">49₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 101 до 500</td>
+									<td class="tabs__cell">2 970₽</td>
+									<td class="tabs__cell">99₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 501 до 1000</td>
+									<td class="tabs__cell">4 470₽</td>
+									<td class="tabs__cell">149₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">от 1001 до 5000</td>
+									<td class="tabs__cell">7 470₽</td>
+									<td class="tabs__cell">249₽</td>
+								</tr>
+								<tr>
+									<td class="tabs__cell">Безлимитный от 5001</td>
+									<td class="tabs__cell">8 470₽</td>
+									<td class="tabs__cell">299₽</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">История платежей текст
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,13 @@
+.select {
+	&__native {
+		width: 100%;
+		padding: 8.5px 15px;
+		border-color: #D8DCE9;
+		border-radius: $default-border-radius;
+		appearance: none;
+		background-image: url("/assets/images/down.svg");
+		background-repeat: no-repeat;
+		background-position: right .75rem center;
+		background-size: 16px 12px;
+	}
+}

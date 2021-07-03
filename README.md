@@ -1,4 +1,9 @@
-# SP.Starter
+# Sp-shop
+![screenshot](https://github.com/some-yummy-nick/lp-ozon/blob/master/some-yummy-lp-ozon.png)
+
+[Макет](https://www.figma.com/file/8W2AShvRQ3oC2mZjy0oSVZ/%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82-Copy?node-id=116%3A9520)
+
+[Результат](https://some-yummy-lp-ozon.netlify.app/)
 
 **Шаблон проекта для быстрого старта.**
 
