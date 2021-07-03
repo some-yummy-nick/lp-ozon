@@ -1,0 +1,102 @@
+<article class="service">
+	<div class="service__wrapper">
+		<picture>
+			<source srcset="/assets/images/services-1-desktop.jpg" media="(min-width: 1200px)"/>
+			<source srcset="/assets/images/services-1-tablet.jpg" media="(min-width: 768px)"/>
+			<img src="/assets/images/services-1-mobile.jpg" alt="" class="service__image"/>
+		</picture>
+		<div class="service__desc">
+			<div class="service__inner">
+				<h3 class="service__title">
+					<span class="bold">Оптимизация продаж на маркетплейсе</span>
+				</h3>
+				<div class="service__text">
+					<p>Наш основной продукт для тех, кто уже продаёт на Wildberries, направленный напрямую на увеличение
+						вашей прибыли от работы с маркетплейсом. В нашем сервисе уже несколько сотен поставщиков
+						и мы понимаем основные ошибки поставщиков, которые тормозят их рост и рычаги увеличения ваших
+						продаж
+						на маркетплейсах. Наша команда и основатель сервиса Дмитрий Бакланов проанализирует ваш бренд,
+						найдут точки роста, оптимизации товаров.
+					</p>
+					<p>Для начала работы необходимо заполнить заявку по ссылке «Заказать».</p>
+				</div>
+				<div class="service__info">
+					<div class="service__check">
+						<svg width="12" height="12">
+							<use xlink:href="#icon-check"></use>
+						</svg>
+					</div>
+					<div class="service__info-text">
+						Вы получите полное понимание своих дальнейших действий для развития бренда, также чек-лист
+						из более
+						30 пунктов по улучшениям или проблемам именно вашего бренда для оптимизации, увеличения выручки
+						и прибыли
+					</div>
+				</div>
+			</div>
+			<div class="service__about">
+				<div class="service__about-info">
+					<div class="service__old-price">
+						<span class="bold">29 900 ₽</span>
+					</div>
+					<div class="service__price">
+						<span class="bold">24 900 ₽</span>
+					</div>
+					<div class="service__time">2 часа</div>
+				</div>
+				<div class="service__buttons">
+					<button class="button button_standard service__order" type="button">Заказать</button>
+					<button class="button button_standard button_border service__more" type="button">Подробнее об услуге
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<article class="service">
+	<div class="service__wrapper">
+		<picture>
+			<source srcset="/assets/images/services-2-desktop.jpg" media="(min-width: 1200px)"/>
+			<source srcset="/assets/images/services-2-tablet.jpg" media="(min-width: 768px)"/>
+			<img src="/assets/images/services-2-mobile.jpg" alt="" class="service__image"/>
+		</picture>
+		<div class="service__desc">
+			<div class="service__inner">
+				<h3 class="service__title">
+					<span class="bold">Помощь в выходе на маркетплейс</span>
+				</h3>
+				<div class="service__text">
+					<p>Продукт для тех кто только собирается выйти на Wildberries. Состоит из пошагового плана со всеми
+						этапами выхода на маркетплейс до первой поставки а также 2-х часовая консультация с экспертом,
+						ответы на все вопросы. Необходимо предварительно заполнить заявку по ссылке «Заказать».</p>
+				</div>
+				<div class="service__info">
+					<div class="service__check">
+						<svg width="12" height="12">
+							<use xlink:href="#icon-check"></use>
+						</svg>
+					</div>
+					<div class="service__info-text">
+						Вы получите ответы на все вопросы, которые мешают выйти и поставить ваши товары на Wildberries.
+					</div>
+				</div>
+			</div>
+			<div class="service__about">
+				<div class="service__about-info">
+					<div class="service__old-price">
+						<span class="bold">9 900 ₽</span>
+					</div>
+					<div class="service__price">
+						<span class="bold">4 900 ₽</span>
+					</div>
+					<div class="service__time">2 часа</div>
+				</div>
+				<div class="service__buttons">
+					<button class="button button_standard service__order" type="button">Заказать</button>
+					<button class="button button_standard button_border service__more" type="button">Подробнее об услуге
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

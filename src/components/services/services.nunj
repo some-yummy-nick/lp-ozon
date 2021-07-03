@@ -1,0 +1,11 @@
+<section class="services">
+	<h2 class="heading">Дополнительные услуги:</h2>
+	<div class="services__intro">
+		<p>Помощь от команды Stat4market, основателя сервиса и партнеров, для увеличения продаж и помощи по работе с
+			маркетплейсом.
+		</p>
+	</div>
+	<div class="services__items">
+		{% include '../../components/service/service.nunj' %}
+	</div>
+</section>

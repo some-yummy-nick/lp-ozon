@@ -2,12 +2,12 @@
 	&__native {
 		width: 100%;
 		padding: 8.5px 15px;
-		border-color: #D8DCE9;
+		border-color: #d8dce9;
 		border-radius: $default-border-radius;
 		appearance: none;
-		background-image: url("/assets/images/down.svg");
+		background-image: url('/assets/images/down.svg');
 		background-repeat: no-repeat;
-		background-position: right .75rem center;
+		background-position: right 0.75rem center;
 		background-size: 16px 12px;
 	}
 }

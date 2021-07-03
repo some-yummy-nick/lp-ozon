@@ -1,0 +1,16 @@
+.services {
+	margin-bottom: 45px;
+
+	&__intro {
+		margin-bottom: 20px;
+		font-size: 12px;
+	}
+
+	@include min-screen($desktop) {
+		margin-bottom: 85px;
+
+		&__intro {
+			font-size: 14px;
+		}
+	}
+}

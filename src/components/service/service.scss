@@ -1,0 +1,247 @@
+.service {
+	&:not(:last-child){
+		margin-bottom: 24px;
+	}
+
+	&__wrapper {
+		border-radius: $default-border-radius * 2;
+		overflow: hidden;
+	}
+
+	&__image {
+		width: 100%;
+	}
+
+	&__desc {
+		padding: 15px;
+		background-color: #fff;
+	}
+
+	&__inner {
+		margin-bottom: 16px;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+		font-size: 16px;
+	}
+
+	&__text {
+		margin-bottom: 16px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		padding: 16px;
+		background-color: #F8F8F8;
+		border-radius: $default-border-radius;
+	}
+
+	&__check {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 24px;
+		height: 24px;
+		margin-right: 12px;
+		fill: none;
+		background-color: #A5D274;
+		border-radius: 50%;
+	}
+
+	&__about {
+		text-align: center;
+	}
+
+	&__price,
+	&__old-price {
+		font-size: 18px;
+	}
+
+	&__old-price {
+		text-decoration: line-through;
+		color: $blue;
+	}
+
+	&__time {
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+
+	&__more,
+	&__order {
+		width: 100%;
+		border-color: #D8DCE9;
+	}
+
+	&__order {
+		margin-bottom: 8px;
+	}
+
+	@include ipad {
+		&__desc {
+			padding-bottom: 24px;
+		}
+
+		&__text {
+			margin-bottom: 20px;
+		}
+
+		&__inner {
+			margin-bottom: 24px;
+		}
+
+		&__about {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&-info {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&__price,
+		&__old-price {
+			margin-right: 24px;
+		}
+
+		&__more,
+		&__order {
+			max-width: 160px;
+			min-width: 160px;
+		}
+
+		&__more {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__order {
+			margin-bottom: 0;
+			margin-right: 16px;
+		}
+
+		&__buttons {
+			display: flex;
+			align-items: center;
+		}
+
+	}
+
+	@include min-screen($tablet) {
+
+		&__title {
+			font-size: 20px;
+		}
+
+		&__more {
+			white-space: nowrap;
+		}
+
+		&__price,
+		&__old-price {
+			font-size: 24px;
+		}
+
+		&__time {
+			margin-bottom: 0;
+		}
+	}
+
+	@include min-screen($desktop) {
+		&__wrapper,
+		&__desc {
+			display: flex;
+		}
+
+		&__inner{
+			margin-bottom: 0;
+		}
+
+		&__image {
+			min-width: 305px;
+		}
+
+	}
+
+	@media (min-width: $desktop) and (max-width: $large) {
+		position: relative;
+		padding-bottom: 50px;
+
+		&__about {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			justify-content: space-between;
+			left: 0;
+			top: calc(100% - 50px);
+			width: 100%;
+
+			&-info{
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&__price,
+		&__old-price {
+			margin-right: 16px;
+		}
+
+		&__buttons{
+			display: flex;
+			align-items: center;
+		}
+
+		&__text {
+			margin-bottom: 10px;
+		}
+
+		&__order {
+			margin-bottom: 0;
+			margin-right: 16px;
+		}
+	}
+
+	@include min-screen($large) {
+
+		&__inner{
+			margin-right: 30px;
+		}
+
+		&__desc {
+			padding: 30px;
+			align-items: center;
+		}
+
+		&__about{
+			&-info{
+				margin-bottom: 24px;
+			}
+		}
+
+		&__text {
+			margin-bottom: 40px;
+		}
+
+		&__time {
+			font-size: 14px;
+		}
+
+		&__more,
+		&__order {
+			max-width: 210px;
+			min-width: 210px;
+		}
+
+		&__order {
+			margin-bottom: 16px;
+		}
+
+	}
+}

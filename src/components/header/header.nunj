@@ -15,7 +15,7 @@
 				</svg>
 				<span class="header__sum">9 932.00 ₽</span>
 				<div class="header__expire">(Хватит ~ 345 дней)</div>
-				<button class="header__add" type="button">Пополнить</button>
+				<button class="button button_small header__add" type="button">Пополнить</button>
 			</div>
 			<div class="header__count">
 				<svg width="14" height="16" class="header__bell">

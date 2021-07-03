@@ -62,7 +62,7 @@
 
 	.nav {
 		display: block;
-		margin-bottom: 20px;
+		margin-bottom: 16px;
 		overflow-x: scroll;
 		white-space: nowrap;
 
@@ -137,6 +137,10 @@
 
 		&__desc {
 			font-size: 14px;
+		}
+
+		.nav{
+			margin-bottom: 30px;
 		}
 	}
 }

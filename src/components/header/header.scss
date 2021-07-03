@@ -129,7 +129,7 @@
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
 			transition: fill $default-transition-duration, stroke $default-transition-duration,
-			transform $default-transition-duration;
+				transform $default-transition-duration;
 		}
 
 		&-close {
@@ -219,18 +219,7 @@
 
 		&__add {
 			display: block;
-			padding: 6px 11.5px 5px;
-			background-color: $blue;
-			color: #fff;
 			font-size: 13px;
-			border: 1px solid transparent;
-			border-radius: $default-border-radius;
-
-			&:hover {
-				border-color: $blue;
-				background-color: transparent;
-				color: $blue;
-			}
 		}
 
 		&__sum {
