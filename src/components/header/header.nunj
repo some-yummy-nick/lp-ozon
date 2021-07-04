@@ -13,7 +13,7 @@
 				<svg width="16" height="16" class="header__coin">
 					<use xlink:href="#icon-coin"></use>
 				</svg>
-				<span class="header__sum">9 932.00 ₽</span>
+				<span class="header__sum">9 932.00 <span class="rouble">q</span></span>
 				<div class="header__expire">(Хватит ~ 345 дней)</div>
 				<button class="button button_small header__add" type="button">Пополнить</button>
 			</div>

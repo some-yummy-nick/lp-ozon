@@ -37,10 +37,10 @@
 			<div class="service__about">
 				<div class="service__about-info">
 					<div class="service__old-price">
-						<span class="bold">29 900 ₽</span>
+						<span class="bold">29 900 <span class="rouble">q</span></span>
 					</div>
 					<div class="service__price">
-						<span class="bold">24 900 ₽</span>
+						<span class="bold">24 900 <span class="rouble">q</span></span>
 					</div>
 					<div class="service__time">2 часа</div>
 				</div>
@@ -84,10 +84,10 @@
 			<div class="service__about">
 				<div class="service__about-info">
 					<div class="service__old-price">
-						<span class="bold">9 900 ₽</span>
+						<span class="bold">9 900 <span class="rouble">q</span></span>
 					</div>
 					<div class="service__price">
-						<span class="bold">4 900 ₽</span>
+						<span class="bold">4 900 <span class="rouble">q</span></span>
 					</div>
 					<div class="service__time">2 часа</div>
 				</div>

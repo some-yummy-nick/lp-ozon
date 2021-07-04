@@ -50,33 +50,33 @@
 								<tbody>
 								<tr>
 									<td class="tabs__cell">до 50</td>
-									<td class="tabs__cell">2370₽</td>
-									<td class="tabs__cell">79₽</td>
+									<td class="tabs__cell">2370<span class="rouble">q</span></td>
+									<td class="tabs__cell">79<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 51 до 100</td>
-									<td class="tabs__cell">2 970₽</td>
-									<td class="tabs__cell">99₽</td>
+									<td class="tabs__cell">2 970<span class="rouble">q</span></td>
+									<td class="tabs__cell">99<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 101 до 500</td>
-									<td class="tabs__cell">4 470₽</td>
-									<td class="tabs__cell">149₽</td>
+									<td class="tabs__cell">4 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">149<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 501 до 1000</td>
-									<td class="tabs__cell">7 470₽</td>
-									<td class="tabs__cell">249₽</td>
+									<td class="tabs__cell">7 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">249<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 1001 до 5000</td>
-									<td class="tabs__cell">10 470₽</td>
-									<td class="tabs__cell">349₽</td>
+									<td class="tabs__cell">10 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">349<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">Безлимитный от 5001</td>
-									<td class="tabs__cell">14 970₽</td>
-									<td class="tabs__cell">499₽</td>
+									<td class="tabs__cell">14 970<span class="rouble">q</span></td>
+									<td class="tabs__cell">499<span class="rouble">q</span></td>
 								</tr>
 								</tbody>
 							</table>
@@ -95,7 +95,7 @@
 									складах,
 									скорости заказов и другим метрикам.</p>
 								<p>
-									<span class="pink">Добавление страницы в отслеживание — 99₽/страница</span>
+									<span class="pink">Добавление страницы в отслеживание — 99<span class="rouble">q</span>/страница</span>
 								</p>
 								<p>
 									Списывается за уникальную страницу, если вдруг удалили страницу и добавили заново —
@@ -114,23 +114,23 @@
 								<tbody>
 								<tr>
 									<td class="tabs__cell">до 3</td>
-									<td class="tabs__cell">0₽</td>
-									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 4 до 10</td>
-									<td class="tabs__cell">0₽</td>
-									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 11 до 50</td>
-									<td class="tabs__cell">0₽</td>
-									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">Безлимитный от 51</td>
-									<td class="tabs__cell">0₽</td>
-									<td class="tabs__cell">0₽</td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
+									<td class="tabs__cell">0<span class="rouble">q</span></td>
 								</tr>
 								</tbody>
 							</table>
@@ -147,7 +147,7 @@
 								<p>Анализ позиций любых товаров на страницах категорий, бренда,
 									поисковых запросов, акций.</p>
 								<p>
-									<span class="pink">Добавление нового товара — 29₽/страница</span>
+									<span class="pink">Добавление нового товара — 29<span class="rouble">q</span>/страница</span>
 								</p>
 								<p>Списывается за уникальный товар, если вдруг удалили товар и добавили заново -
 									повторно оплата не списывается.</p>
@@ -164,33 +164,33 @@
 								<tbody>
 								<tr>
 									<td class="tabs__cell">до 20</td>
-									<td class="tabs__cell">870₽</td>
-									<td class="tabs__cell">29₽</td>
+									<td class="tabs__cell">870<span class="rouble">q</span></td>
+									<td class="tabs__cell">29<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 21 до 100</td>
-									<td class="tabs__cell">1 470₽</td>
-									<td class="tabs__cell">49₽</td>
+									<td class="tabs__cell">1 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">49<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 101 до 500</td>
-									<td class="tabs__cell">2 970₽</td>
-									<td class="tabs__cell">99₽</td>
+									<td class="tabs__cell">2 970<span class="rouble">q</span></td>
+									<td class="tabs__cell">99<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 501 до 1000</td>
-									<td class="tabs__cell">4 470₽</td>
-									<td class="tabs__cell">149₽</td>
+									<td class="tabs__cell">4 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">149<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">от 1001 до 5000</td>
-									<td class="tabs__cell">7 470₽</td>
-									<td class="tabs__cell">249₽</td>
+									<td class="tabs__cell">7 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">249<span class="rouble">q</span></td>
 								</tr>
 								<tr>
 									<td class="tabs__cell">Безлимитный от 5001</td>
-									<td class="tabs__cell">8 470₽</td>
-									<td class="tabs__cell">299₽</td>
+									<td class="tabs__cell">8 470<span class="rouble">q</span></td>
+									<td class="tabs__cell">299<span class="rouble">q</span></td>
 								</tr>
 								</tbody>
 							</table>
