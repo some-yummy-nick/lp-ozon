@@ -189,3 +189,9 @@
 		}
 	}
 }
+
+.break:after {
+	// line break br with css
+	content: "\A";
+	white-space: pre;
+}

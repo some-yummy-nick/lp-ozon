@@ -42,7 +42,7 @@
 							<table class="table tabs__table">
 								<thead>
 								<tr>
-									<th class="tabs__th" scope="col">Количество товаров</th>
+									<th class="tabs__th" scope="col">Количество <span class="break"></span> товаров</th>
 									<th class="tabs__th" scope="col">Месяц</th>
 									<th class="tabs__th" scope="col">День</th>
 								</tr>
@@ -106,7 +106,7 @@
 							<table class="table tabs__table">
 								<thead>
 								<tr>
-									<th class="tabs__th" scope="col">Количество страниц</th>
+									<th class="tabs__th" scope="col">Количество <span class="break"></span> страниц</th>
 									<th class="tabs__th" scope="col">Месяц</th>
 									<th class="tabs__th" scope="col">День</th>
 								</tr>
@@ -156,7 +156,7 @@
 							<table class="table tabs__table">
 								<thead>
 								<tr>
-									<th class="tabs__th" scope="col">Количество товаров</th>
+									<th class="tabs__th" scope="col">Количество<span class="break"></span> товаров</th>
 									<th class="tabs__th" scope="col">Месяц</th>
 									<th class="tabs__th" scope="col">День</th>
 								</tr>

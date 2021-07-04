@@ -1,5 +1,5 @@
 .links {
-	margin-bottom: 48px;
+	margin-bottom: 16px;
 
 	.nav_links {
 		display: none;
@@ -10,6 +10,8 @@
 	}
 
 	@include min-screen($tablet) {
+		margin-bottom: 48px;
+
 		.nav {
 			&_links {
 				display: flex;

@@ -167,48 +167,48 @@
 
 	}
 
-	@media (min-width: $desktop) and (max-width: $large) {
-		position: relative;
-		padding-bottom: 50px;
+	//@media (min-width: $desktop) and (max-width: $large) {
+	//	position: relative;
+	//	padding-bottom: 50px;
+	//
+	//	&__about {
+	//		position: absolute;
+	//		display: flex;
+	//		align-items: center;
+	//		padding-top: 10px;
+	//		padding-bottom: 10px;
+	//		justify-content: space-between;
+	//		left: 0;
+	//		top: calc(100% - 50px);
+	//		width: 100%;
+	//
+	//		&-info{
+	//			display: flex;
+	//			align-items: center;
+	//		}
+	//	}
+	//
+	//	&__price,
+	//	&__old-price {
+	//		margin-right: 16px;
+	//	}
+	//
+	//	&__buttons{
+	//		display: flex;
+	//		align-items: center;
+	//	}
+	//
+	//	&__text {
+	//		margin-bottom: 10px;
+	//	}
+	//
+	//	&__order {
+	//		margin-bottom: 0;
+	//		margin-right: 16px;
+	//	}
+	//}
 
-		&__about {
-			position: absolute;
-			display: flex;
-			align-items: center;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			justify-content: space-between;
-			left: 0;
-			top: calc(100% - 50px);
-			width: 100%;
-
-			&-info{
-				display: flex;
-				align-items: center;
-			}
-		}
-
-		&__price,
-		&__old-price {
-			margin-right: 16px;
-		}
-
-		&__buttons{
-			display: flex;
-			align-items: center;
-		}
-
-		&__text {
-			margin-bottom: 10px;
-		}
-
-		&__order {
-			margin-bottom: 0;
-			margin-right: 16px;
-		}
-	}
-
-	@include min-screen($large) {
+	@include min-screen($desktop) {
 
 		&__inner{
 			margin-right: 30px;
@@ -227,6 +227,22 @@
 
 		&__text {
 			margin-bottom: 40px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp:5
+		}
+
+		&__info{
+			&-text{
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp:2
+			}
+
 		}
 
 		&__time {

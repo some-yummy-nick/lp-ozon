@@ -33,13 +33,13 @@
 	&__desc {
 		flex-grow: 1;
 		background-color: #f8f8f8;
-		padding: 24px;
+		padding: 8px;
 		font-size: 12px;
 		border-radius: 0 0 8px 8px;
 	}
 
 	&__info {
-		margin-bottom: 32px;
+		margin-bottom: 8px;
 	}
 
 	.table {
@@ -57,6 +57,8 @@
 			font-size: 12px;
 			color: #666666;
 			border-bottom: none;
+			border-top: none;
+			vertical-align: middle;
 		}
 	}
 
@@ -128,6 +130,11 @@
 		&__top {
 			font-size: 16px;
 		}
+
+		&__desc{
+			padding: 16px;
+		}
+
 	}
 
 	@include min-screen($desktop) {
@@ -136,11 +143,20 @@
 		}
 
 		&__desc {
+			padding: 24px;
 			font-size: 14px;
+		}
+
+		&__info{
+			margin-bottom: 24px;
 		}
 
 		.nav{
 			margin-bottom: 30px;
+		}
+
+		.break{
+			display: none;
 		}
 	}
 }
