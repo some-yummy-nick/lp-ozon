@@ -157,33 +157,32 @@
 	border: none;
 }
 
-
-.button{
+.button {
 	color: #fff;
 	background-color: $blue;
 	border: 1px solid $blue;
 	border-radius: $default-border-radius;
 
-	&_standard{
+	&_standard {
 		padding: 9px 14.5px 8px;
 	}
 
-	&_small{
+	&_small {
 		padding: 6px 11.5px 5px;
 	}
 
-	&:hover{
+	&:hover {
 		border-color: $blue;
 		background-color: transparent;
 		color: $blue;
 	}
 
-	&_border{
+	&_border {
 		color: $blue;
 		border: 1px solid $blue;
 		background-color: transparent;
 
-		&:hover{
+		&:hover {
 			background-color: $blue;
 			color: #fff;
 		}
@@ -192,13 +191,12 @@
 
 .break:after {
 	// line break br with css
-	content: "\A";
+	content: '\A';
 	white-space: pre;
 }
 
-.rouble
-{
-	font-family:'rouble';
+.rouble {
+	font-family: 'rouble';
 	font-weight: normal;
 	font-style: normal;
 }

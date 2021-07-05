@@ -65,13 +65,6 @@
 	.nav {
 		display: block;
 		margin-bottom: 16px;
-		overflow-x: scroll;
-		white-space: nowrap;
-
-		&::-webkit-scrollbar {
-			width: 0;
-			height: 0;
-		}
 	}
 
 	.nav-item {
@@ -124,6 +117,16 @@
 
 	@include max-screen($tablet) {
 		padding: 20px 15px;
+
+		.nav {
+			overflow-x: scroll;
+			white-space: nowrap;
+
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+		}
 	}
 
 	@include ipad {
@@ -131,10 +134,9 @@
 			font-size: 16px;
 		}
 
-		&__desc{
+		&__desc {
 			padding: 16px;
 		}
-
 	}
 
 	@include min-screen($desktop) {
@@ -147,15 +149,15 @@
 			font-size: 14px;
 		}
 
-		&__info{
+		&__info {
 			margin-bottom: 24px;
 		}
 
-		.nav{
+		.nav {
 			margin-bottom: 30px;
 		}
 
-		.break{
+		.break {
 			display: none;
 		}
 	}
